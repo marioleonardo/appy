@@ -1,0 +1,124 @@
+
+
+.spacer{
+    height:70px;
+}
+
+.screen{
+    height:100vh;
+    
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.quest{
+    width: 39vw;
+    height: 25vh;
+    background-color: #E5E7FF;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.tips{
+    width: 39vw;
+    height: 25vh;
+    
+    background-color: #E5E7FF;
+    border-radius: 20px;
+    background-image: url("../img/bulb.svg");
+    background-repeat: no-repeat;
+    background-position: 34px 15px;
+}
+
+h1,h2,p,Link{
+    
+    text-decoration: none;
+}
+
+.chat{
+    width: 100%;
+    height: 25vh;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #E5E7FF;
+    background-image: url("../img/chat.svg");
+    background-repeat: no-repeat;
+    background-position: 46vw 35px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.descr{
+    font-size: 12px;
+    margin-left: 16px;
+    width: 120px;
+    color: black;
+}
+
+.first-row2{
+    margin-top: 20px;
+}
+
+.container{
+    margin: 0 30px;
+}
+
+.title-text{
+    color: black;
+    margin: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.title-text2{
+    color: black;
+    margin: 20px 0px 0px 0px;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+
+
+.title-quest{
+    font-size: 19px;
+    padding: 0 16px;
+    font-weight: 800;
+}
+
+.title-chat{
+    font-size: 19px;
+    margin: 20px 16px 10px 16px;
+    font-weight: 800;
+}
+
+.title-tips{
+    font-size: 19px;
+    margin-top: 17vh;
+    margin-left: 16px;
+    font-weight: 800;
+}
+
+
+
+.pro-pic{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
+
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+

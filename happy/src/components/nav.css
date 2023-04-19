@@ -1,0 +1,31 @@
+
+
+.nav-bar{
+    
+    position:fixed;
+    width:100%;
+    top: 0px;
+}
+
+.sign-out{
+    margin: 5px 5px;
+}
+
+.menu{
+    margin: 5px 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.flex{
+    display: flex;
+}
+
+.drop-btn{
+    background: rgba(76, 175, 80, 0.0);
+    border:0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:'FILL' 0,'wght' 600,'GRAD' 0,'opsz' 48;
+}
