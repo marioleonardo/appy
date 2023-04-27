@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/appy/static/css/main.9cb751d2.css",
-    "main.js": "/appy/static/js/main.c0544256.js",
+    "main.css": "/appy/static/css/main.8d5fab52.css",
+    "main.js": "/appy/static/js/main.d9ed9673.js",
     "static/media/bulb.svg": "/appy/static/media/bulb.7c5fdc893999ffa22fa5.svg",
     "static/media/chat.svg": "/appy/static/media/chat.363c22eec012eca00232.svg",
     "static/media/mic.svg": "/appy/static/media/mic.c8385f364bd1a7819a78a697fb9fb2e8.svg",
@@ -9,11 +9,11 @@
     "static/media/send.svg": "/appy/static/media/send.f6cb2bae8356720e1c13b7153948fd0b.svg",
     "static/media/hamburger.svg": "/appy/static/media/hamburger.0bf9c3d74e434ae809cb874140f15bf8.svg",
     "static/media/back.svg": "/appy/static/media/back.037e7aeb3dbe35a36ea69c4bd7734f32.svg",
-    "main.9cb751d2.css.map": "/appy/static/css/main.9cb751d2.css.map",
-    "main.c0544256.js.map": "/appy/static/js/main.c0544256.js.map"
+    "main.8d5fab52.css.map": "/appy/static/css/main.8d5fab52.css.map",
+    "main.d9ed9673.js.map": "/appy/static/js/main.d9ed9673.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cb751d2.css",
-    "static/js/main.c0544256.js"
+    "static/css/main.8d5fab52.css",
+    "static/js/main.d9ed9673.js"
   ]
 }
