@@ -20,7 +20,7 @@ const SetBox = () => {
   return (
     <div className="bcolorB screen">
     <div className="spacer"/>
-    <main className="chat-box">
+    <main className="chat-box box3">
       <h1 className="title-set">Impostazioni</h1>
       <div className="settings-box">
         <h2 className="opt-set">Account</h2>

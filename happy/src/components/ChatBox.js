@@ -19,6 +19,7 @@ import { useSearchParams } from 'react-router-dom';
 
 const ChatBox = () => {
 
+
   
   const [messages, setMessages] = useState([]);
   const scroll = useRef();
@@ -59,7 +60,7 @@ const ChatBox = () => {
       if(QuerySnapshot.empty){
         setMatchId("ciao");
         
-        navigate('/');
+        navigate('/appy');
       }
 
     });

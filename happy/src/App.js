@@ -58,7 +58,8 @@ function App() {
     const updateUser = async ()=>{
       await setDoc(doc(db, "users", auth.currentUser.uid), {
         uid:auth.currentUser.uid,
-        matching:false
+        matching:false,
+        username: auth.currentUser.displayName
       });
     }
     
@@ -74,7 +75,6 @@ function App() {
 
       {!user ? (
         <>
-          <NavBar/>
           <Welcome />
         </>
         
@@ -82,9 +82,9 @@ function App() {
         <>
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<div><NavBar /><HomeBox /></div>}/>
-              <Route path="/settings" element={<div><NavBar /><SetBox /></div>}/>
-              <Route path="/chat" element={<><NavBar /><ChatBox/></>}/>
+              <Route path="/appy" element={<div><NavBar /><HomeBox /></div>}/>
+              <Route path="/settings" element={<div><NavBar back="true"/><SetBox /></div>}/>
+              <Route path="/chat" element={<><NavBar back="true"/><ChatBox/></>}/>
               <Route path="/matchPage" element={<><NavBar back="true"/><MatchPage /></>}/>
             </Routes>
           </BrowserRouter>

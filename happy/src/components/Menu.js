@@ -43,7 +43,12 @@ const MenuOpt =  () => {
    
     const refid = querySnapshot.docs[0].ref.id;
     await deleteDoc(doc(db, "match", refid));
-    navigate('/');
+    navigate('/appy');
+  };
+
+  const openSettings= ()=>{
+
+    navigate('/settings');
   };
 
 
@@ -54,6 +59,8 @@ const MenuOpt =  () => {
         <MenuItem onClick={()=>{annullaRicerca()}}>Annulla Ricerca</MenuItem>
         <MenuItem onClick={()=>{}}>Segnala</MenuItem>
         <MenuItem onClick={()=>{auth.signOut()}}>Sign out</MenuItem>
+        <MenuItem onClick={()=>{openSettings()}}>Settings</MenuItem>
+
       </Menu>
     </>
   );

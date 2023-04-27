@@ -12,9 +12,11 @@
 }
 
 .chat-box{
-    width: 100%;
+    width: 80%;
     height: 100%;
+    margin: auto;
 }
+
 
 .chat-box h1,h2{
     color: black;

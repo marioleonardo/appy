@@ -5,7 +5,10 @@ import {
   onSnapshot,
   limit,
   or,
-  where
+  where,
+  addDoc,
+  updateDoc,
+  doc
 } from "firebase/firestore";
 import { db } from "../firebase";
 
@@ -33,6 +36,8 @@ const HomeBox = () => {
       where("uid", "==", auth.currentUser.uid)
     );
 
+
+
     const unsub= onSnapshot(qidi, (QuerySnapshot) => {
       
       QuerySnapshot.forEach((doc) => {
@@ -59,8 +64,11 @@ const HomeBox = () => {
 
     });
 
+    
+
     ()=>unsub;
     ()=>un;
+
     
     }
 
@@ -74,7 +82,7 @@ const HomeBox = () => {
     <div className="container">
       <div className="title">
         <div className="pro-pic bcolorY"/>
-        <h1 className="title-text">Ciao Tito ♥</h1>
+        <h1 className="title-text">Ciao {auth.currentUser.displayName.split(" ")[0]} ♥</h1>
       </div>
       <div className="first-row">
         <div className="quest">

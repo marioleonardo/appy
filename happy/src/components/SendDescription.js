@@ -1,13 +1,22 @@
 import React, { useState } from "react";
 import { auth, db } from "../firebase";
-import { addDoc, collection, serverTimestamp, updateDoc, doc } from "firebase/firestore";
+import { addDoc, collection, serverTimestamp, updateDoc, doc, query, limit, and, where, onSnapshot, getDocs} from "firebase/firestore";
 import { useNavigate } from 'react-router-dom';
 import Mic from "../img/mic.svg";
 import Send from "../img/send.svg";
 
 const SendDescription= () => {
   const [message, setMessage] = useState("");
+  const [users, setUsers] = useState([]);
   let navigate = useNavigate();
+  
+  const qma = query(
+    collection(db, "users"),
+    limit(2),
+    where("matching", "==", true)
+  );
+
+
   const sendMessage = async (event) => {
     event.preventDefault();
     if (message.trim() === "") {
@@ -19,10 +28,35 @@ const SendDescription= () => {
         description: message,
         matching:true
       });
+      await checkMatch();
+      
     }
-    console.log(message);
+    async function checkMatch() {
+      let users = []
+      const querySnapshot = await getDocs(qma);
+      
+      if(querySnapshot.docs.length>1){
+
+        users.push(querySnapshot.docs[0].data().uid);
+        users.push(querySnapshot.docs[1].data().uid);
+        await updateDoc(doc(db, "users", users[0]), {
+          matching: false
+        });
+        await updateDoc(doc(db, "users", users[1]), {
+          matching: false
+        });
+        await addDoc(collection(db, "match"), {
+          user1: users[0],
+          user2: users[1]
+        });
+      }
+    }
+    async function addMatch() {
+      
+    }
+
     setMessage("");
-    navigate('/');
+    navigate('/appy');
   };
   return (
     <div className="bar bcolorB">
