@@ -83,7 +83,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/appy" element={<div><NavBar /><HomeBox /></div>}/>
-              <Route path="/settings" element={<div><NavBar back="true"/><SetBox /></div>}/>
+              <Route path="/settings" element={<div><NavBar color="bcolorB" back="true"/><SetBox /></div>}/>
               <Route path="/chat" element={<><NavBar back="true"/><ChatBox/></>}/>
               <Route path="/matchPage" element={<><NavBar back="true"/><MatchPage /></>}/>
             </Routes>

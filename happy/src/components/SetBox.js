@@ -18,10 +18,10 @@ import "./settings.css"
 const SetBox = () => {
 
   return (
-    <div className="bcolorB screen">
+    <div className="bcolorN screen">
     <div className="spacer"/>
-    <main className="chat-box box3">
-      <h1 className="title-set">Impostazioni</h1>
+    <main className="set-box box3 ">
+      <h1 className="title-set colorB">Impostazioni</h1>
       <div className="settings-box">
         <h2 className="opt-set">Account</h2>
         <h2 className="opt-set">Impostazioni chat</h2>

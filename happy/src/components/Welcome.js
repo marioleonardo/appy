@@ -1,8 +1,10 @@
 import React from "react";
-import GoogleSignin from "../img/btn_google_signin_dark_pressed_web.png";
+import GoogleSignin from "../img/signin2.svg";
+import GoogleLogin from "../img/login2.svg";
 import { auth } from "../firebase";
 import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
-import { NavLink, useNavigate } from 'react-router-dom'
+import NavBarLogin from "./NavBarLogin";
+
 
 const Welcome = () => {
   const googleSignIn = () => {
@@ -11,19 +13,31 @@ const Welcome = () => {
   };
 
   return (
-    <main className="welcome">
-      <h2>Welcome to React Chat.</h2>
-      <img src="/logo512.png" alt="ReactJs logo" width={50} height={50} />
-      <p>Sign in with Google to chat with with your fellow React Developers.</p>
+    <>
+    <NavBarLogin color="bcolorB"/>
+    
+    <main className="welcome bcolorB">
+      <div className="login-spacer"/>
+      <h2 className="login-text">Login</h2>
+      <form>  
+        <div className="">   
+
+            <input type="text" placeholder="Email" name="username" required />  
+
+            <input type="password" placeholder="Password" name="password" required />  
+            <button type="submit" className="submit-login bcolorY">Login</button>    
+        </div>   
+    </form>     
       <button className="sign-in">
         <img
           onClick={googleSignIn}
-          src={GoogleSignin}
+          src={GoogleLogin}
           alt="sign in with google"
           type="button"
         />
       </button>
     </main>
+    </>
   );
 };
 

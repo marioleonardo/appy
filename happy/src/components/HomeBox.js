@@ -23,6 +23,8 @@ const HomeBox = () => {
 
 
   useEffect(() => {
+    console.log(auth.currentUser.photoURL)
+
     if(auth){
     const qidi = query(
       collection(db, "match"),
@@ -81,7 +83,12 @@ const HomeBox = () => {
     
     <div className="container">
       <div className="title">
-        <div className="pro-pic bcolorY"/>
+        {auth.currentUser.photoURL!=""?(
+          <img src={auth.currentUser.photoURL} className="pro-pic bcolorY"/>
+        ):(
+          <div className="pro-pic bcolorY"/>
+        )}
+        
         <h1 className="title-text">Ciao {auth.currentUser.displayName.split(" ")[0]} ♥</h1>
       </div>
       <div className="first-row">
@@ -97,7 +104,7 @@ const HomeBox = () => {
           
           <>
           <Link to="/chat" style={{ textDecoration: 'none' }}>
-          <div className="chat">
+          <div className="chat chat-chat">
               <h2 className="title-chat colorN">Chat</h2>
               <p className="descr">Entra nella community Appy aiutando altri ragazzi</p>
           </div> 
@@ -106,14 +113,14 @@ const HomeBox = () => {
         ):(
           <>
           { matching==true?(
-             <div className="chat">
+             <div className="chat chat-search">
              <h2 className="title-chat colorN">Searching</h2>
              <p className="descr">Entra nella community Appy aiutando altri ragazzi</p>
               </div> 
             ):(
               <Link to="/matchPage" style={{ textDecoration: 'none' }}>
-              <div className="chat">
-              <h2 className="title-chat colorN">Nobody</h2>
+              <div className="chat chat-ask">
+              <h2 className="title-chat colorN">Ask for help</h2>
               <p className="descr colorN">Entra nella community Appy aiutando altri ragazzi</p>
               </div> 
               </Link>

@@ -4,8 +4,10 @@ import BackIcon from "../img/back.svg";
 import { auth } from "../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
-import { NavLink, Navigate, useNavigate } from 'react-router-dom'
+
 import Dropdown from 'react-dropdown';
+import { Menu, MenuItem, MenuButton } from '@szhsin/react-menu';
+import Hamburger from "../img/hamburger.svg";
 
 
 
@@ -17,8 +19,7 @@ import "../App.css"
 
 
 
-const NavBar = ({back, color}) => {
-  let navigate = useNavigate();
+const NavBarLogin = ({back, color}) => {
 
   const [user] = useAuthState(auth);
   const [open, setOpen] = React.useState(false);
@@ -26,10 +27,6 @@ const NavBar = ({back, color}) => {
   const googleSignIn = () => {
     const provider = new GoogleAuthProvider();
     signInWithRedirect(auth, provider);
-  };
-
-  const returnPreviousPage=()=>{
-    navigate(-1);
   };
 
 
@@ -50,9 +47,9 @@ const NavBar = ({back, color}) => {
   
 
   return (
-    <div className={color}>
+    <div className="">
 
-    <nav className="nav-bar">
+    <nav className="nav-bar bcolorB">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       {back? (
         <img onClick={()=>returnPreviousPage()} src={BackIcon}/>
@@ -60,13 +57,15 @@ const NavBar = ({back, color}) => {
         <h1><span className="colorN">App</span><span className="colorY">Y</span></h1>
       )}
       
-      {user ? (
+
         <div className="flex">
         
 
 
         
-        <MenuOpt/>
+        <Menu menuButton={<MenuButton className="button-ham bcolorB"><img src={Hamburger} className="bcolorB"/></MenuButton>} transition>
+
+        </Menu>
         
 
         
@@ -74,20 +73,12 @@ const NavBar = ({back, color}) => {
         </div>
        
         
-      ) : (
-        <button className="sign-in">
-          <img
-            onClick={googleSignIn}
-            src={GoogleSignin}
-            alt="Sign in with Google"
-            type="button"
-          />
-        </button>
+      
 
-      )}
+      
     </nav>
     </div>
   );
 };
 
-export default NavBar;
+export default NavBarLogin;

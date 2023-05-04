@@ -46,12 +46,23 @@ h1,h2,p,Link{
     margin-top: 20px;
     border-radius: 20px;
     background-color: #E5E7FF;
-    background-image: url("../img/chat.svg");
     background-repeat: no-repeat;
-    background-position: 46vw 35px;
-    display: flex;
-    flex-direction: column;
     
+    display: flex;
+    flex-direction: column; 
+}
+
+.chat-chat{
+    background-image: url("../img/chat.svg");
+    background-position: 46vw 35px;
+}
+.chat-search{
+    background-image: url("../img/search.svg");
+    background-position: 50vw 35px;
+}
+.chat-ask{
+    background-image: url("../img/ask.svg");
+    background-position: 54vw 35px;
 }
 
 .descr{
