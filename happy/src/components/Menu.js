@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { auth } from "../firebase";
 import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
 import { useNavigate } from 'react-router-dom';
@@ -21,9 +21,11 @@ import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/slide.css';
 
 import "../App.css"
+import VotePopup from "./VotePopup";
 
 const MenuOpt =  () => {
   let navigate = useNavigate();
+  const [voteOpened, setVoteOpened] = useState(false);
   const { uid, displayName, photoURL } = auth.currentUser;
   const qid = query(
     collection(db, "match"),
@@ -46,6 +48,8 @@ const MenuOpt =  () => {
     navigate('/appy');
   };
 
+  
+
   const openSettings= ()=>{
 
     navigate('/settings');
@@ -54,13 +58,19 @@ const MenuOpt =  () => {
 
   return (
     <>
+      {
+        voteOpened?(
+          <VotePopup/>
+        ):(
+          <></>
+        )
+      }
       <Menu menuButton={<MenuButton className="button-ham bcolorB"><img src={Hamburger} className="bcolorB"/></MenuButton>} transition>
-        <MenuItem onClick={()=>{eliminateMatch()}}>Elimina</MenuItem>
+        <MenuItem onClick={()=>{setVoteOpened(true)}}>Elimina</MenuItem>
         <MenuItem onClick={()=>{annullaRicerca()}}>Annulla Ricerca</MenuItem>
         <MenuItem onClick={()=>{}}>Segnala</MenuItem>
         <MenuItem onClick={()=>{auth.signOut()}}>Sign out</MenuItem>
         <MenuItem onClick={()=>{openSettings()}}>Settings</MenuItem>
-
       </Menu>
     </>
   );

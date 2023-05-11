@@ -57,9 +57,20 @@ h1,h2,p,Link{
     background-position: 46vw 35px;
 }
 .chat-search{
-    background-image: url("../img/search.svg");
-    background-position: 50vw 35px;
+    display: flex;
+    flex-direction: row;
+
 }
+
+.chat-search-logo{
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-top: 38px;
+    margin-left: 40px;
+}
+
 .chat-ask{
     background-image: url("../img/ask.svg");
     background-position: 54vw 35px;
@@ -133,3 +144,11 @@ h1,h2,p,Link{
 
 
 
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
+}

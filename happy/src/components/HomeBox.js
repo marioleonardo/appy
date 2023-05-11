@@ -15,6 +15,7 @@ import { db } from "../firebase";
 import { Link } from "react-router-dom";
 import "./home.css"
 import { auth } from "../firebase";
+import imgSearch from "../img/search.svg";
 
 const HomeBox = () => {
   const [matchId, setMatchId] = useState("noid");
@@ -114,8 +115,13 @@ const HomeBox = () => {
           <>
           { matching==true?(
              <div className="chat chat-search">
+             <div>
              <h2 className="title-chat colorN">Searching</h2>
              <p className="descr">Entra nella community Appy aiutando altri ragazzi</p>
+             </div>
+             <div>
+              <img src={imgSearch} className="chat-search-logo"/>
+             </div>
               </div> 
             ):(
               <Link to="/matchPage" style={{ textDecoration: 'none' }}>

@@ -7,14 +7,9 @@ import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
 import { NavLink, Navigate, useNavigate } from 'react-router-dom'
 import Dropdown from 'react-dropdown';
 
-
-
 import MenuOpt from './Menu'
 import "./nav.css"
 import "../App.css"
-
-
-
 
 
 const NavBar = ({back, color}) => {
