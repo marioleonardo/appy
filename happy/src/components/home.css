@@ -9,6 +9,7 @@
     
 }
 
+
 .first-row{
     display: flex;
     justify-content: space-between;
@@ -53,8 +54,7 @@ h1,h2,p,Link{
 }
 
 .chat-chat{
-    background-image: url("../img/chat.svg");
-    background-position: 46vw 35px;
+    background-color: #FBBC05;
 }
 .chat-search{
     display: flex;

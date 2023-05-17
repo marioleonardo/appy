@@ -47,21 +47,21 @@ const NavBar = ({back, color}) => {
   return (
     <div className={color}>
 
-    <nav className="nav-bar">
+    <nav className={color + " nav-bar"}>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       {back? (
-        <img onClick={()=>returnPreviousPage()} src={BackIcon}/>
+        <img onClick={()=>returnPreviousPage()} className={(color=="bcolorN"? " back"  : "colorN")} src={BackIcon}/>
       ):(
         <h1><span className="colorN">App</span><span className="colorY">Y</span></h1>
       )}
       
       {user ? (
-        <div className="flex">
+        <div className={"flex "+color}>
         
 
 
         
-        <MenuOpt/>
+        <MenuOpt color={color}/>
         
 
         

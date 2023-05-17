@@ -1,0 +1,37 @@
+.cardgroup-3 {
+  color: #001e3b;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-family: Epilogue, Arial;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+}
+
+.rectangle-3 {
+  height: 100%;
+  background-color: #fff9;
+  border-radius: 16px;
+  flex-direction: row;
+  flex-basis: 100%;
+  justify-content: space-around;
+  align-self: flex-start;
+  align-items: center;
+  padding-left: 1px;
+  display: flex;
+}
+
+.it-is-better-to-conquer-yourself {
+  align-self: center;
+  margin-left: 1px;
+}
+
+.faquote-left {
+  width: 24px;
+  height: 20px;
+  object-fit: cover;
+  align-self: center;
+  margin-left: 1px;
+}

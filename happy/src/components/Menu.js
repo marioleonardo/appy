@@ -3,6 +3,7 @@ import { auth } from "../firebase";
 import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
 import { useNavigate } from 'react-router-dom';
 import Hamburger from "../img/hamburger.svg";
+import Hamburger2 from "../img/hamburger2.svg";
 import {
   where,
   or,
@@ -23,7 +24,7 @@ import '@szhsin/react-menu/dist/transitions/slide.css';
 import "../App.css"
 import VotePopup from "./VotePopup";
 
-const MenuOpt =  () => {
+const MenuOpt =  ({color}) => {
   let navigate = useNavigate();
   const [voteOpened, setVoteOpened] = useState(false);
   const { uid, displayName, photoURL } = auth.currentUser;
@@ -41,6 +42,7 @@ const MenuOpt =  () => {
   };
 
   const eliminateMatch= async ()=>{
+    setVoteOpened(false);
     const querySnapshot = await getDocs(qid);
    
     const refid = querySnapshot.docs[0].ref.id;
@@ -60,12 +62,12 @@ const MenuOpt =  () => {
     <>
       {
         voteOpened?(
-          <VotePopup/>
+          <VotePopup setVoteOpened={setVoteOpened} eliminateMatch={eliminateMatch}/>
         ):(
           <></>
         )
       }
-      <Menu menuButton={<MenuButton className="button-ham bcolorB"><img src={Hamburger} className="bcolorB"/></MenuButton>} transition>
+      <Menu menuButton={<MenuButton className={"button-ham "+ color}><img src={(color=="bcolorB"? Hamburger  : Hamburger2)} className={color + " settings"}/></MenuButton>} transition>
         <MenuItem onClick={()=>{setVoteOpened(true)}}>Elimina</MenuItem>
         <MenuItem onClick={()=>{annullaRicerca()}}>Annulla Ricerca</MenuItem>
         <MenuItem onClick={()=>{}}>Segnala</MenuItem>

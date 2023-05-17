@@ -23,12 +23,12 @@ const SetBox = () => {
     <main className="set-box box3 ">
       <h1 className="title-set colorB">Impostazioni</h1>
       <div className="settings-box">
-        <h2 className="opt-set">Account</h2>
-        <h2 className="opt-set">Impostazioni chat</h2>
-        <h2 className="opt-set">Privacy e sicurezza</h2>
-        <h2 className="opt-set">Notifiche e suoni</h2>
-        <h2 className="opt-set">Dati e arichivio</h2>
-        <h2 className="opt-set">Lingua</h2>
+        <h2 className="opt-set colorB">Account</h2>
+        <h2 className="opt-set colorB">Impostazioni chat</h2>
+        <h2 className="opt-set colorB">Privacy e sicurezza</h2>
+        <h2 className="opt-set colorB">Notifiche e suoni</h2>
+        <h2 className="opt-set colorB">Dati e arichivio</h2>
+        <h2 className="opt-set colorB">Lingua</h2>
       </div>
     </main>
     </div>

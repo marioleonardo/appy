@@ -15,7 +15,7 @@ import SendMessage from "./SendMessage";
 import { useNavigate } from 'react-router-dom';
 import { useSearchParams } from 'react-router-dom';
 
-
+import CardUser from "../img/card-user.svg";
 
 const ChatBox = () => {
 
@@ -80,18 +80,26 @@ const ChatBox = () => {
 
 
   return (
+    <>
+    <div className="background"/>
     <main className="chat-box bcolorB">
       <div className="messages-wrapper bcolorB">
-        
         {messages?.map((message) => (
           <Message key={message.id} message={message} />
         ))}
-        <div  className="spacer2 bcolorB"/>
+        <div  className=" bcolorB" style={{height:"120px"}}>
+        <div  className="submit-vote"><h2 style={{fontSize:"18px", fontWeight:"500"}}>Chatta</h2></div>
+        </div>
+        <img style={{width:"80%", margin:"40px auto 0px auto"}} src={CardUser}/>
+        
       </div>
       {/* when a new message enters the chat, the screen scrolls dowwn to the scroll div */}
       <span ref={scroll}></span>
       <SendMessage matchId={matchId} scroll={scroll} />
+      
+
     </main>
+    </>
   );
 };
 

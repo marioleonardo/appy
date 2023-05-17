@@ -1,0 +1,38 @@
+.cardgroup {
+  color: #001e3b;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-family: Poppins, Arial;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+}
+
+.rectangle-4 {
+  height: 100%;
+  background-color: #fff9;
+  border-radius: 20px;
+  flex-direction: column;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+  align-self: flex-start;
+  align-items: stretch;
+  padding-bottom: 2px;
+  padding-left: 16px;
+  padding-right: 12px;
+  display: flex;
+  padding: 15px;
+  margin: 10px 0px;
+}
+
+.quiz {
+  align-self: flex-start;
+  line-height: 36px;
+}
+
+.un-po-di-domande-per-conoscerti {
+  align-self: left;
+  font-size: .813rem;
+  font-weight: 400;
+}

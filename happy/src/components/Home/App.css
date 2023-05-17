@@ -1,0 +1,192 @@
+.i-phone-14-pro-home {
+  color: #000;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  flex-direction: row;
+  font-family: SF Pro Text, Arial;
+  font-size: .75rem;
+  font-weight: 600;
+  display: flex;
+  background-color: #bfc3ff;
+}
+
+.rectangle {
+  height: 90%;
+  width: 100%;
+  background-color: #bfc3ff;
+  border-radius: 20px 20px 0 0;
+  flex-direction: column;
+  align-self: flex-start;
+  align-items: center;
+  display: flex;
+  overflow-y: scroll;
+}
+
+.flex-container {
+  text-align: center;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: flex-end;
+  align-items: center;
+  margin-left: 3px;
+  padding-right: 23px;
+  font-size: .938rem;
+  line-height: 18px;
+  display: flex;
+}
+
+.time {
+  align-self: center;
+  margin-bottom: 1px;
+  margin-right: 229px;
+}
+
+.ui {
+  width: 68px;
+  height: 16px;
+  object-fit: cover;
+  align-self: flex-start;
+}
+
+.flex-container-1 {
+  color: #fbfbfb;
+  width: 95%;
+  flex-direction: row;
+  flex-basis: 4%;
+  justify-content: flex-start;
+  align-self: flex-end;
+  align-items: flex-end;
+  margin-top: 12px;
+  margin-bottom: 14px;
+  margin-left: 14px;
+  padding-right: 25px;
+  font-family: Epilogue, Arial;
+  font-weight: 700;
+  line-height: 45px;
+  display: flex;
+}
+
+.app-y {
+  color: #fbbc05;
+  align-self: flex-end;
+  margin-right: 215px;
+  font-family: Poppins, Arial;
+  font-size: 1.875rem;
+}
+
+.flex-container-2 {
+  text-align: center;
+  height: 95%;
+  flex-direction: row;
+  flex-basis: 9%;
+  justify-content: space-between;
+  align-self: flex-start;
+  align-items: stretch;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  display: flex;
+}
+
+.group {
+  width: 19px;
+  height: 24px;
+  object-fit: cover;
+  align-self: flex-end;
+  margin-right: -1px;
+  margin-top: 20px;
+}
+
+.cat-absolute-container {
+  z-index: 1;
+  height: 70%;
+  flex-direction: row;
+  flex-basis: 64%;
+  justify-content: center;
+  align-self: flex-start;
+  align-items: center;
+  margin-right: -15px;
+  display: flex;
+}
+
+.num-3 {
+  align-self: center;
+}
+
+.ellipse-1 {
+  z-index: 1;
+  width: 21px;
+  height: 21px;
+  object-fit: cover;
+  align-self: flex-start;
+  margin-left: -5px;
+}
+
+.flex-container-3 {
+  color: #001e3b;
+  width: 88%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 71px;
+  font-family: Alegreya, Arial;
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+}
+
+.ellipse {
+  width: 71px;
+  height: 71px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  border: 4px solid #fbbc05;
+  align-self: flex-start;
+  margin-right: 26px;
+  border-radius: 50px;
+}
+
+.welcome-back-sarina {
+  align-self: flex-end;
+  margin-bottom: 1px;
+}
+
+.group-5-instance-1 {
+  width: 85%;
+  flex-basis: 9%;
+  margin-top: 15px;
+}
+
+.group-instance-1 {
+  width: 85%;
+  flex-basis: 16%;
+  margin-left: 0px;
+  margin-top: 15px;
+}
+
+.group-1-instance-1 {
+  width: 85%;
+  flex-basis: 14%;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+.group-6-instance-1 {
+  width: 85%;
+  flex-basis: 12%;
+  margin-left: 5px;
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+
+.naviation-rectangle {
+  width: 100%;
+  height: 82px;
+  position: fixed;
+
+  border-radius: 20px 20px 0 0;
+  background-color: white;
+  bottom: 0;
+}

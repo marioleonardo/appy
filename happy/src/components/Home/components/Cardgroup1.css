@@ -1,0 +1,71 @@
+.cardgroup-1 {
+  color: #000;
+
+  font-family: Poppins, Arial;
+  font-size: .813rem;
+  font-weight: 700;
+  line-height: 36px;
+
+}
+
+.rectangle-1 {
+  height: 95%;
+  background-color: #fff9;
+  border-radius: 20px;
+  flex-direction: row;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+
+  align-items: center;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  padding-right: 6px;
+
+  padding: 15px;
+  margin: 10px 0px;
+}
+
+
+
+.flex-container-5 {
+  height: 65%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  align-items: stretch;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  display: flex;
+}
+
+.rect1 {
+  display: block;
+  padding: 20px;
+}
+
+.ask-for-help {
+  color: #001e3b;
+  align-self: flex-start;
+  font-size: 1.5rem;
+}
+
+.chat{
+  height: 20vh;
+}
+
+.descr2 {
+  font-weight: 400;
+  display: block;
+  height: 10px;
+  line-height: 1.5;
+}
+
+.vector {
+  width: 61px;
+  height: 74px;
+  object-fit: cover;
+  border-radius: 4px;
+  align-self: center;
+  margin-top: 2px;
+  margin-left: 10px;
+}

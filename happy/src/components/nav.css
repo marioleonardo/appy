@@ -26,6 +26,7 @@
     border:0;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:'FILL' 0,'wght' 600,'GRAD' 0,'opsz' 48;
+.back{
+    filter: invert(77%) sepia(35%) saturate(942%) hue-rotate(192deg) brightness(98%) contrast(116%);
 }
+

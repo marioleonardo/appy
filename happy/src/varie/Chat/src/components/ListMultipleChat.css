@@ -1,0 +1,54 @@
+.list-multiple-chat {
+  text-align: center;
+  color: #8a8ca9;
+  background-color: #ffe28e;
+  border-radius: 15px;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+  font-family: SF Pro Display, Arial;
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 17px;
+  display: flex;
+}
+
+.icon-name {
+  flex-direction: row;
+  column-gap: 10px;
+  display: flex;
+}
+
+.read-stat-date {
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 4px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  display: flex;
+}
+
+.frame {
+  color: #fff;
+  background-color: #fbbc05;
+  border-radius: 90px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  margin-bottom: 4px;
+  margin-left: 73px;
+  padding: 5px;
+  font-size: .625rem;
+  line-height: 7px;
+  display: flex;
+}
+
+.num-2 {
+  margin-left: 1px;
+}
+
+.completed {
+  text-align: right;
+  margin-bottom: 4px;
+  font-weight: 400;
+}

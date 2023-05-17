@@ -1,0 +1,467 @@
+.i-phone-14-pro-notifiche {
+  color: #573926;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-family: Rubik, Arial;
+  font-size: .813rem;
+  font-weight: 400;
+  line-height: 18px;
+  display: flex;
+}
+
+.rectangle {
+  height: 100%;
+  background-color: #bfc3ff;
+  border-radius: 20px 20px 0 0;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.flex-container {
+  color: #000;
+  text-align: center;
+  width: 90%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: flex-end;
+  align-items: center;
+  margin-left: 3px;
+  padding-right: 23px;
+  font-family: SF Pro Text, Arial;
+  font-size: .938rem;
+  font-weight: 600;
+  display: flex;
+}
+
+.time {
+  align-self: center;
+  margin-bottom: 1px;
+  margin-right: 229px;
+}
+
+.ui {
+  width: 68px;
+  height: 16px;
+  object-fit: cover;
+  align-self: flex-start;
+}
+
+.flex-container-1 {
+  color: #fbfbfb;
+  width: 95%;
+  flex-direction: row;
+  flex-basis: 4%;
+  justify-content: flex-start;
+  align-self: flex-end;
+  align-items: flex-end;
+  margin-left: 14px;
+  padding-right: 25px;
+  font-family: Poppins, Arial;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 12px;
+  display: flex;
+}
+
+.app-y {
+  color: #fbbc05;
+  align-self: flex-end;
+  margin-right: 215px;
+  line-height: 45px;
+}
+
+.flex-container-2 {
+  text-align: center;
+  height: 95%;
+  flex-direction: row;
+  flex-basis: 9%;
+  justify-content: space-between;
+  align-self: flex-start;
+  align-items: stretch;
+  margin-bottom: 1px;
+  font-family: Epilogue, Arial;
+  font-size: .75rem;
+  font-weight: 500;
+  display: flex;
+}
+
+.group-1 {
+  width: 19px;
+  height: 24px;
+  object-fit: cover;
+  align-self: flex-end;
+  margin-right: -1px;
+}
+
+.cat-absolute-container {
+  z-index: 1;
+  height: 70%;
+  flex-direction: row;
+  flex-basis: 64%;
+  justify-content: center;
+  align-self: flex-start;
+  align-items: center;
+  margin-right: -15px;
+  display: flex;
+}
+
+.num-3 {
+  align-self: center;
+}
+
+.ellipse {
+  z-index: 1;
+  width: 21px;
+  height: 21px;
+  object-fit: cover;
+  align-self: flex-start;
+  margin-left: -5px;
+}
+
+.notifiche {
+  color: #001e3b;
+  align-self: flex-start;
+  margin-bottom: 14px;
+  margin-left: 32px;
+  font-family: Poppins, Arial;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.flex-container-3 {
+  width: 95%;
+  flex-direction: row;
+  flex-basis: 7%;
+  justify-content: flex-start;
+  align-self: flex-end;
+  align-items: stretch;
+  margin-top: 1px;
+  margin-left: 11px;
+  padding-right: 61px;
+  font-weight: 500;
+  display: flex;
+}
+
+.ellipse-1 {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  align-self: flex-start;
+  margin-right: 17px;
+}
+
+.flex-container-4 {
+  height: 95%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  align-items: stretch;
+  margin-top: 1px;
+  display: flex;
+}
+
+.flex-container-5 {
+  width: 100%;
+  flex-direction: row;
+  flex-basis: 25%;
+  justify-content: flex-start;
+  align-self: flex-start;
+  align-items: stretch;
+  padding-right: 80px;
+  font-size: .75rem;
+  display: flex;
+}
+
+.arp-kaur {
+  align-self: flex-start;
+  margin-right: 24px;
+  font-size: .875rem;
+}
+
+.just-now {
+  color: #707070;
+  align-self: flex-start;
+  font-weight: 400;
+}
+
+.hey-everyone-stay-positive-its-a {
+  align-self: flex-start;
+  margin-left: 1px;
+  font-weight: 400;
+}
+
+.flex-container-6 {
+  width: 95%;
+  flex-direction: row;
+  flex-basis: 4%;
+  justify-content: flex-start;
+  align-self: center;
+  align-items: stretch;
+  margin-left: 21px;
+  padding-right: 80px;
+  display: flex;
+}
+
+.ellipse-2 {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  align-self: flex-start;
+  margin-right: 18px;
+}
+
+.flex-container-7 {
+  height: 90%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  align-items: stretch;
+  display: flex;
+}
+
+.flex-container-8 {
+  width: 100%;
+  flex-direction: row;
+  flex-basis: 38%;
+  justify-content: flex-start;
+  align-self: flex-start;
+  align-items: stretch;
+  margin-right: 1px;
+  padding-right: 43px;
+  font-size: .75rem;
+  display: flex;
+}
+
+.simran-c {
+  align-self: flex-start;
+  margin-right: 22px;
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.num-3-hrs-ago {
+  color: #707070;
+  align-self: center;
+}
+
+.lets-chat-i-am-a-good-listener {
+  align-self: flex-start;
+}
+
+.flex-container-9 {
+  width: 95%;
+  flex-direction: row;
+  flex-basis: 4%;
+  justify-content: flex-start;
+  align-self: flex-end;
+  align-items: stretch;
+  margin-left: 11px;
+  padding-right: 66px;
+  font-size: .875rem;
+  display: flex;
+}
+
+.ellipse-1-1 {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  align-self: flex-start;
+  margin-right: 17px;
+}
+
+.flex-container-10 {
+  height: 90%;
+  flex-direction: column;
+  flex-basis: 67%;
+  justify-content: space-around;
+  align-self: flex-end;
+  align-items: stretch;
+  display: flex;
+}
+
+.flex-container-11 {
+  color: #707070;
+  width: 100%;
+  flex-direction: row;
+  flex-basis: 36%;
+  justify-content: flex-start;
+  align-self: flex-start;
+  align-items: stretch;
+  padding-right: 80px;
+  display: flex;
+}
+
+.aashnaaaa {
+  color: #573926;
+  align-self: flex-start;
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+.num-1-hr-ago {
+  align-self: flex-start;
+  font-size: .75rem;
+}
+
+.flex-container-12 {
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-start;
+  align-items: stretch;
+  font-size: .813rem;
+  display: flex;
+}
+
+.vector-1 {
+  z-index: 1;
+  width: 18px;
+  height: 19px;
+  object-fit: cover;
+  align-self: flex-start;
+  margin-bottom: -11px;
+}
+
+.anyone-free-to-talk-hmu-i-prefer {
+  align-self: flex-start;
+}
+
+.flex-container-13 {
+  width: 95%;
+  flex-direction: row;
+  flex-basis: 7%;
+  justify-content: flex-start;
+  align-self: flex-end;
+  align-items: stretch;
+  margin-left: 11px;
+  padding-right: 53px;
+  display: flex;
+}
+
+.ellipse-4 {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  align-self: flex-start;
+  margin-right: 17px;
+}
+
+.flex-container-14 {
+  height: 95%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  align-items: stretch;
+  margin-top: 1px;
+  padding-bottom: 1px;
+  display: flex;
+}
+
+.flex-container-15 {
+  width: 100%;
+  flex-direction: row;
+  flex-basis: 25%;
+  justify-content: flex-start;
+  align-self: flex-start;
+  align-items: stretch;
+  margin-bottom: 1px;
+  margin-left: 1px;
+  padding-right: 80px;
+  font-size: .875rem;
+  display: flex;
+}
+
+.neyyzz {
+  align-self: flex-start;
+  margin-right: 34px;
+  font-weight: 500;
+}
+
+.num-2-min-ago {
+  color: #707070;
+  align-self: flex-start;
+  font-size: .75rem;
+}
+
+.this-app-is-so-cool-i-have-been {
+  align-self: flex-start;
+  margin-top: 1px;
+}
+
+.flex-container-16 {
+  color: #707070;
+  width: 95%;
+  flex-direction: row;
+  flex-basis: 4%;
+  justify-content: flex-start;
+  align-self: center;
+  align-items: stretch;
+  margin-bottom: 48px;
+  margin-left: 21px;
+  padding-right: 80px;
+  font-size: .75rem;
+  display: flex;
+}
+
+.ellipse-3 {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  align-self: flex-start;
+  margin-right: 17px;
+}
+
+.flex-container-17 {
+  color: #573926;
+  height: 90%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  align-items: stretch;
+  font-weight: 500;
+  display: flex;
+}
+
+.diljit {
+  align-self: flex-start;
+  margin-left: 1px;
+  font-size: .875rem;
+}
+
+.ssuppp {
+  align-self: flex-start;
+  font-weight: 400;
+}
+
+.num-3-hrs-ago-1 {
+  align-self: flex-start;
+  margin-top: 4px;
+  margin-left: 42px;
+}
+
+.naviation-rectangle {
+  width: 393px;
+  height: 82px;
+  object-fit: cover;
+  border-radius: 20px;
+  align-self: flex-start;
+  margin-top: 6px;
+}

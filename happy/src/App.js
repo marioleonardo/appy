@@ -11,7 +11,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NavLink, useNavigate } from 'react-router-dom'
 import { useEffect, useState} from "react";
 import { db } from "./firebase";
-
+import ChatList from "./components/ChatList";
+import Home from "./components/Home/App";
 
 import {
   query,
@@ -24,6 +25,7 @@ import {
   where,
   setDoc
 } from "firebase/firestore";
+import FootBar from "./components/FootBar";
 
 function App() {
   const [user] = useAuthState(auth);
@@ -82,10 +84,12 @@ function App() {
         <>
           <BrowserRouter>
             <Routes>
-              <Route path="/appy" element={<div><NavBar /><HomeBox /></div>}/>
-              <Route path="/settings" element={<div><NavBar color="bcolorB" back="true"/><SetBox /></div>}/>
-              <Route path="/chat" element={<><NavBar back="true"/><ChatBox/></>}/>
-              <Route path="/matchPage" element={<><NavBar back="true"/><MatchPage /></>}/>
+              <Route path="/home" element={<div><NavBar color="bcolorB"/><HomeBox /></div>}/>
+              <Route path="/appy" element={<div><NavBar color="bcolorB"/><Home/><FootBar activePage={0}/></div>}/>
+              <Route path="/settings" element={<div><NavBar color="bcolorN" back="true"/><SetBox /><FootBar activePage={2}/></div>}/>
+              <Route path="/chat" element={<><NavBar color="bcolorB" back="true"/><ChatBox/></>}/>
+              <Route path="/chatList" element={<><NavBar color="bcolorB" back="true"/><ChatList/><FootBar activePage={1}/></>}/>
+              <Route path="/matchPage" element={<><NavBar color="bcolorB" back="true"/><MatchPage /></>}/>
             </Routes>
           </BrowserRouter>
         </>

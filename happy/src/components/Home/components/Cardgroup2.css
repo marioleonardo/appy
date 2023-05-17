@@ -1,0 +1,58 @@
+.cardgroup-2 {
+  color: #001e3b;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-family: Poppins, Arial;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 21px;
+  display: flex;
+}
+
+.rectangle-2 {
+  height: 100%;
+  background-color: #fff9;
+  border-radius: 20px;
+  flex-direction: row;
+  flex-basis: 100%;
+  justify-content: space-between;
+  align-self: flex-start;
+  align-items: center;
+  padding-right: 6px;
+  display: flex;
+  padding: 15px;
+  margin: 10px 0px;
+}
+
+.flex-container-4 {
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  align-items: stretch;
+  margin-bottom: 4px;
+  display: flex;
+}
+
+.tips {
+  align-self: flex-start;
+  margin-bottom: 1px;
+  line-height: 36px;
+}
+
+.un-po-di-consigli-per-te {
+  align-self: flex-start;
+  margin-top: 1px;
+  margin-bottom: -1px;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+.vector-1 {
+  width: 52px;
+  height: 80px;
+  object-fit: cover;
+  align-self: center;
+  margin-left: 16px;
+}
