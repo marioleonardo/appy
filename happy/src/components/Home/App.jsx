@@ -11,6 +11,7 @@ import Cardgroup1 from "./components/Cardgroup1";
 import Cardgroup from "./components/Cardgroup";
 import Cardgroup3 from "./components/Cardgroup3";
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import {
   query,
   collection,
@@ -23,7 +24,6 @@ import {
   doc
 } from "firebase/firestore";
 import { db } from "./../../firebase";
-import { Link } from "react-router-dom";
 import { auth } from "../../firebase";
 import NotiIcon from "../../img/noti-icon.svg";
 
@@ -125,7 +125,9 @@ const Home = () => {
         )}
         
           <span className="welcome-back-sarina">Buongiorno, {auth.currentUser.displayName.split(" ")[0]}!</span>
-          <img src={NotiIcon} alt="" style={{margin:"auto 0px"}}/>
+          <Link to="/noti">
+            <img src={NotiIcon} alt="" style={{margin:"auto 0px"}}/>
+          </Link>
         </div>
         <Cardgroup3 className="group-5-instance-1" {...propsData.group5} />
         <Cardgroup1 matchId={matchId} matching={matching} className="group-instance-1" {...propsData.group} />

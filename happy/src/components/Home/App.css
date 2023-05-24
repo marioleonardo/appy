@@ -68,6 +68,11 @@
   display: flex;
 }
 
+a{
+  text-decoration: none;
+
+}
+
 .app-y {
   color: #fbbc05;
   align-self: flex-end;

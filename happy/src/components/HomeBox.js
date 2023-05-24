@@ -96,9 +96,10 @@ const HomeBox = () => {
         <div className="quest">
           <h2 className="title-quest colorN">Domande AppY</h2>
         </div>
-        <div className="tips">
+        <Link to="/tips"><div className="tips">
           <h2 className="title-tips colorN">Tips</h2>
         </div>
+        </Link>
       </div>
       {
         matchId!="ciao" ? (

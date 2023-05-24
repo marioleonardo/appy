@@ -15,7 +15,7 @@ const FootBar = ({activePage}) => {
       <Link to={"/chatList"}><FaComments className={activePage==1? "active": ""} size={32} /></Link>
       <Link to={"/settings"}><FaCog className={activePage==2? "active": ""}  size={32} /></Link>
 
-      <FaUser className={activePage==3? "active": ""} size={32} />
+      <Link to={"/pro"}><FaUser className={activePage==3? "active": ""} size={32} /></Link>
       
     </div>
     </>

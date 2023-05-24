@@ -13,6 +13,10 @@ import { useEffect, useState} from "react";
 import { db } from "./firebase";
 import ChatList from "./components/ChatList";
 import Home from "./components/Home/App";
+import Quiz from "./img/quiz.svg";
+import Tips from "./img/tips.svg";
+import Noti from "./img/notifiche.svg";
+import Pro from "./img/pro.svg";
 
 import {
   query,
@@ -84,6 +88,10 @@ function App() {
         <>
           <BrowserRouter>
             <Routes>
+              <Route path="/pro" element={<div><NavBar color="bcolorB" back="true"/><img className="tips-im" src={Pro}/><FootBar activePage={3}/><div className="background"/></div>}/>
+              <Route path="/quiz" element={<div><NavBar color="bcolorB" back="true"/><img className="quiz-im" src={Quiz}/><div className="background"/></div>}/>
+              <Route path="/noti" element={<div><NavBar color="bcolorB" back="true"/><img className="noti-im" src={Noti}/><div className="background"/></div>}/>
+              <Route path="/tips" element={<div><NavBar color="bcolorB" back="true"/><img className="tips-im" src={Tips}/><div className="background"/></div>}/>
               <Route path="/home" element={<div><NavBar color="bcolorB"/><HomeBox /></div>}/>
               <Route path="/appy" element={<div><NavBar color="bcolorB"/><Home/><FootBar activePage={0}/></div>}/>
               <Route path="/settings" element={<div><NavBar color="bcolorN" back="true"/><SetBox /><FootBar activePage={2}/></div>}/>

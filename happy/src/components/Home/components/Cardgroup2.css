@@ -10,6 +10,10 @@
   display: flex;
 }
 
+span{
+  color: #001e3b;
+}
+
 .rectangle-2 {
   height: 100%;
   background-color: #fff9;
