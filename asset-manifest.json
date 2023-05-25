@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/appy/static/css/main.81ebd954.css",
-    "main.js": "/appy/static/js/main.97f1ecf1.js",
+    "main.css": "/appy/static/css/main.c874797c.css",
+    "main.js": "/appy/static/js/main.8b42ed54.js",
     "static/media/notifiche.svg": "/appy/static/media/notifiche.5a3afe8f6eb7932c62df721d6611f3b2.svg",
     "static/media/card-user.svg": "/appy/static/media/card-user.58c5d154a90936581f06a8e4f26776c6.svg",
     "static/media/tips.svg": "/appy/static/media/tips.acb3dc94653b4045b5c05e2b44f99888.svg",
@@ -27,11 +27,11 @@
     "static/media/hamburger2.svg": "/appy/static/media/hamburger2.a2e6d4a33bdac213ea37442e4b870e8f.svg",
     "static/media/back.svg": "/appy/static/media/back.037e7aeb3dbe35a36ea69c4bd7734f32.svg",
     "static/media/ellipse1.svg": "/appy/static/media/ellipse1.81e9e324757bc553be8047932288114a.svg",
-    "main.81ebd954.css.map": "/appy/static/css/main.81ebd954.css.map",
-    "main.97f1ecf1.js.map": "/appy/static/js/main.97f1ecf1.js.map"
+    "main.c874797c.css.map": "/appy/static/css/main.c874797c.css.map",
+    "main.8b42ed54.js.map": "/appy/static/js/main.8b42ed54.js.map"
   },
   "entrypoints": [
-    "static/css/main.81ebd954.css",
-    "static/js/main.97f1ecf1.js"
+    "static/css/main.c874797c.css",
+    "static/js/main.8b42ed54.js"
   ]
 }
