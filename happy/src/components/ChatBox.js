@@ -87,7 +87,7 @@ const ChatBox = () => {
         {messages?.map((message) => (
           <Message key={message.id} message={message} />
         ))}
-        <div  className=" bcolorB" style={{height:"120px"}}>
+        <div  className=" bcolorB" style={{height:"80px"}}>
         
         </div>
         <img style={{width:"80%", margin:"40px auto 0px auto"}} src={CardUser}/>

@@ -102,12 +102,12 @@
 
 .value {
   position: relative;
-  width: calc(var(--value) * 0.096%);
+  width: calc(var(--value) * 0.0963%);
   min-width: 10px;
   height: 22px;
   border-radius: 25px;
   background-color: #FBBC05;
-  margin-top: -55.5px;
+  margin-top: -56.5px;
   margin-left: 2%;
   pointer-events: none;
 }
