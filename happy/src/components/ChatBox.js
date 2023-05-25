@@ -88,7 +88,7 @@ const ChatBox = () => {
           <Message key={message.id} message={message} />
         ))}
         <div  className=" bcolorB" style={{height:"120px"}}>
-        <div  className="submit-vote"><h2 style={{fontSize:"18px", fontWeight:"500"}}>Chatta</h2></div>
+        
         </div>
         <img style={{width:"80%", margin:"40px auto 0px auto"}} src={CardUser}/>
         
@@ -105,3 +105,4 @@ const ChatBox = () => {
 
 export default ChatBox;
 //or(where("match.cvsoiV0fvUnLR0g2yxLA.user1", "==", auth.currentUser.uid), where("user2", "==", auth.currentUser.uid))
+//<div  className="submit-vote"><h2 style={{fontSize:"18px", fontWeight:"500"}}>Chatta</h2></div>
